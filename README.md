@@ -157,3 +157,7 @@ Ranked by what a real user hitting this after one meeting would ask for next:
 Deliberately **not** on this list (cut during scoping, not overlooked): booking-link creation,
 multi-calendar support, team-shared notes, and action-item sync to external task tools. All
 reasonable ideas, but each expands scope in a direction this prototype isn't trying to prove yet.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
