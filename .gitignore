@@ -1,0 +1,12 @@
+.env
+.env.local
+frontend/.env.local
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+frontend/dist/
+frontend/node_modules/
+docs/**
+frontend/.oxlintrc.json
+frontend/impeccable/**
