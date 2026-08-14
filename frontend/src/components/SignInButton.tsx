@@ -1,5 +1,5 @@
 import { requestAccessToken } from "../lib/googleAuth";
-import { APP_NAME, SIGNIN } from "../lib/copy";
+import { APP_NAME, APP_VERSION, FOOTER, SIGNIN } from "../lib/copy";
 import { GoogleIcon, CalendarIcon, MicIcon, SparkleIcon } from "./icons";
 
 export function SignInButton({ onSignedIn }: { onSignedIn: (token: string) => void }) {
@@ -45,6 +45,20 @@ export function SignInButton({ onSignedIn }: { onSignedIn: (token: string) => vo
           </button>
           <p className="mt-3 text-xs text-zinc-400 text-center">{SIGNIN.privacyNote}</p>
         </div>
+
+        <p className="mt-5 text-xs text-zinc-400 text-center">
+          {FOOTER.authorPrefix}{" "}
+          <a
+            href={FOOTER.authorUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-zinc-500 hover:text-indigo-600 font-medium underline underline-offset-2 decoration-zinc-300 hover:decoration-indigo-400 transition-colors"
+          >
+            {FOOTER.authorName}
+          </a>
+          <span className="text-zinc-300"> · </span>
+          <span className="tabular-nums">v{APP_VERSION}</span>
+        </p>
       </div>
     </div>
   );

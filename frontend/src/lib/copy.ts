@@ -1,5 +1,5 @@
 export const APP_NAME = "Notewell";
-export const APP_VERSION = "0.5.0";
+export const APP_VERSION = __APP_VERSION__;
 
 export const SIGNIN = {
   tagline: "Meeting notes, without the notes",
