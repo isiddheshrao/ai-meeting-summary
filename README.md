@@ -103,7 +103,7 @@ Firefox/Safari).
 ### Trying it without a live call
 
 Pick a meeting that's already ended and paste in one of the sample transcripts in
-[`docs/demo-transcripts.md`](docs/demo-transcripts.md), fictional transcripts written for
+[`test-data/demo-transcripts.md`](test-data/demo-transcripts.md), fictional transcripts written for
 testing the paste-and-summarize flow without needing a real recording.
 
 ## Deploying to Vercel
