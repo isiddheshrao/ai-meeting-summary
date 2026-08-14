@@ -1,0 +1,14 @@
+{
+  "builds": [
+    { "src": "frontend/package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } },
+    { "src": "api/meetings.py", "use": "@vercel/python" },
+    { "src": "api/transcribe.py", "use": "@vercel/python" },
+    { "src": "api/generate_notes.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/meetings", "dest": "api/meetings.py" },
+    { "src": "/api/transcribe", "dest": "api/transcribe.py" },
+    { "src": "/api/generate-notes", "dest": "api/generate_notes.py" },
+    { "src": "/(.*)", "dest": "frontend/$1" }
+  ]
+}
